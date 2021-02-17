@@ -1,0 +1,161 @@
+footer {
+    background: #404a3d;
+    position: relative;
+    .container {
+        padding: 25px 0;
+        position: relative;
+        @media (max-width: 990px) {
+            padding: 25px 0 0 0;
+        }
+        .bg_footer {
+            position: absolute;
+            pointer-events: none;
+            right: 0;
+            bottom: -20px;
+            width: 700px;
+            height: 300px;
+            opacity: .3;
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.footer_wrap {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    grid-gap: 60px;
+    @media (max-width: 1280px) {
+        grid-gap: 40px;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .footer_title {
+        color: #fff;
+        margin-bottom: 15px;
+        font: 600 1.5rem 'Hind Siliguri', sans-serif;
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+            font: 600 1.2rem 'Hind Siliguri', sans-serif;
+        }
+    }
+    .footer_nav {
+        padding-left: 40px;
+        border-left: 1px solid rgba(255, 255, 255, .3);
+        @media (max-width: 990px) {
+            padding: 0;
+            border: none;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                a {
+                    color: #cccccc;
+                    font: 600 1.1rem 'Hind Siliguri', sans-serif;
+                    @media (max-width: 990px) {
+                        font: 600 .95rem 'Hind Siliguri', sans-serif;
+                    }
+                }
+            }
+            li:last-child {
+                margin: 0;
+            }
+        }
+    }
+    .footer_info_box {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .title {
+            margin: 0;
+            margin-right: 10px;
+            color: #fff;
+            font: 600 1.2rem 'Hind Siliguri', sans-serif;
+            @media (max-width: 990px) {
+                font: 600 1rem 'Hind Siliguri', sans-serif;
+            }
+        }
+        .item {
+            margin: 0;
+            font: 400 1rem 'Hind Siliguri', sans-serif;
+            color: #cccccc;
+            @media (max-width: 576px) {
+                max-width: 250px;
+            }
+        }
+        .item:last-child {
+            margin: 0;
+        }
+    }
+    .footer_logo {
+        img {
+            margin-bottom: 15px;
+        }
+        .footer_text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            font: 400 1rem/24px 'Hind Siliguri', sans-serif;
+        }
+        .form_sub {
+            display: flex;
+            align-items: center;
+            position: relative;
+            input {
+                border-radius: 35px;
+                padding: 15px 20px;
+                border: 1px solid #666e64;
+                color: #fff;
+                appearance: none;
+                width: 100%;
+                box-sizing: border-box;
+                outline: none;
+                background: #666e64;
+                font: 400 1rem 'Hind Siliguri', sans-serif;
+            }
+            button {
+                border-radius: 35px;
+                padding: 10px 15px;
+                outline: none;
+                border: none;
+                position: absolute;
+                right: 5px;
+                appearance: none;
+                font: 600 1rem 'Hind Siliguri', sans-serif;
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+    input::-moz-placeholder {
+        color: #fff;
+    }
+    input::-webkit-input-placeholder {
+        color: #fff;
+    }
+}
+
+.footer_copy {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 10px 70px;
+    margin-top: 25px;
+    @media (max-width: 1280px) {
+        padding: 10px 45px;
+    }
+    @media (max-width: 990px) {
+        padding: 10px 0;
+        margin: 0;
+    }
+    p {
+        max-width: 1280px;
+        margin: 0 auto;
+        color: #fff;
+        font: 400 .87rem 'Hind Siliguri', sans-serif;
+    }
+}

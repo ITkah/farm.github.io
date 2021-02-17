@@ -1,0 +1,46 @@
+.breadcrumbs {
+    background: rgb(67, 178, 210);
+    background: linear-gradient(90deg, rgba(67, 178, 210, 1) 0%, rgba(63, 185, 195, 1) 43%, rgba(57, 193, 175, 1) 100%);
+    .container {
+        padding: 50px 0;
+        @media (max-width: 990px) {
+            padding: 30px 0;
+        }
+    }
+    .breadcrumbs_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .breadcrumbs_titel {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 15px;
+            font: 600 2.5rem 'Hind Siliguri', sans-serif;
+            @media (max-width: 990px) {
+                font: 600 1.75rem 'Hind Siliguri', sans-serif;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                margin: 0 5px;
+                a {
+                    color: #fff;
+                    font: 400 1rem 'Hind Siliguri', sans-serif;
+                    &::after {
+                        content: '|';
+                        position: relative;
+                        left: 5px;
+                    }
+                }
+                span {
+                    font: 400 1rem 'Hind Siliguri', sans-serif;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

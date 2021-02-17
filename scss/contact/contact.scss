@@ -1,0 +1,50 @@
+.contact_text {
+    text-align: center;
+    font: 400 .95rem 'Hind Siliguri', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.contact_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .contact_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact_img {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(67, 178, 210);
+        background: linear-gradient(90deg, rgba(67, 178, 210, 1) 0%, rgba(63, 185, 195, 1) 43%, rgba(57, 193, 175, 1) 100%);
+        img {
+            height: 40px;
+        }
+    }
+    .contact_title {
+        color: #37c5a6;
+        font: 500 1.4rem 'Hind Siliguri', sans-serif;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .contact_text {
+        font: 400 .95rem 'Hind Siliguri', sans-serif;
+    }
+}

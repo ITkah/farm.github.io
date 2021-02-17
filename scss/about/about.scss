@@ -1,0 +1,95 @@
+.history_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .history_title {
+        font: bold 2rem/1 'Hind Siliguri', sans-serif;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            font: bold 1.25rem/1 'Hind Siliguri', sans-serif;
+        }
+    }
+    .history_text {
+        font: 400 .9rem/23px 'Hind Siliguri', sans-serif;
+    }
+}
+
+.about_price {
+    position: relative;
+    .container {
+        padding: 55px 0;
+        position: relative;
+        z-index: 9;
+        @media (max-width: 990px) {
+            padding: 35px 0;
+        }
+    }
+    .about_price_img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+    &::before {
+        content: '';
+        background: rgba(55, 197, 166, .3);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        z-index: 9;
+        width: 100%;
+    }
+    .about_price_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .about_price_title {
+            font: bold 2rem/1 'Hind Siliguri', sans-serif;
+            color: #fff;
+            margin-bottom: 15px;
+            @media (max-width: 990px) {
+                font: bold 1.25rem/1 'Hind Siliguri', sans-serif;
+            }
+        }
+        .about_price_text {
+            font: 600 1.5rem/1 'Hind Siliguri', sans-serif;
+            color: #fff;
+            margin-bottom: 15px;
+            @media (max-width: 990px) {
+                font: 600 1.125rem/1 'Hind Siliguri', sans-serif;
+            }
+        }
+        .about_price_btn {
+            background: #37c5a6;
+            display: inline-block;
+            border-radius: 25px;
+            padding: 10px 25px;
+            color: #fff;
+            font: 400 1rem 'Hind Siliguri', sans-serif;
+            @media (max-width: 576px) {
+                width: 100%;
+                box-sizing: border-box;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
