@@ -1,6 +1,5 @@
 .breadcrumbs {
-    background: rgb(67, 178, 210);
-    background: linear-gradient(90deg, rgba(67, 178, 210, 1) 0%, rgba(63, 185, 195, 1) 43%, rgba(57, 193, 175, 1) 100%);
+    background: url(../img/home/bg_last.jpg) no-repeat center center/cover;
     .container {
         padding: 50px 0;
         @media (max-width: 990px) {
