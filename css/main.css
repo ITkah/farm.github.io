@@ -1140,7 +1140,198 @@
     .work_container .work_box .text {
       color: #4a4b4b;
       text-align: center;
-      font: 400 0.9rem 0.22px "Hind Siliguri", sans-serif; }
+      font: 400 .9rem/22px 'Hind Siliguri', sans-serif; }
+
+.bred_about {
+  background: url(../img/home/bg_last.jpg) no-repeat center center/cover;
+  position: relative; }
+  .bred_about::before {
+    content: '';
+    background: #017d3f;
+    background: -webkit-gradient(linear, left top, right top, color-stop(40%, #017d3f), color-stop(93%, #ecc01d));
+    background: -o-linear-gradient(left, #017d3f 40%, #ecc01d 93%);
+    background: linear-gradient(90deg, #017d3f 40%, #ecc01d 93%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .6; }
+  .bred_about .container {
+    padding: 60px 0; }
+    @media (max-width: 990px) {
+      .bred_about .container {
+        padding: 40px 0; } }
+  .bred_about .bred_about_wrap {
+    position: relative;
+    z-index: 9;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .bred_about .bred_about_wrap .bred_about_title {
+      margin-bottom: 5px;
+      color: #fff;
+      font: 600 1.4rem 'Hind Siliguri', sans-serif; }
+      @media (max-width: 990px) {
+        .bred_about .bred_about_wrap .bred_about_title {
+          font: 600 1.25rem 'Hind Siliguri', sans-serif; } }
+    .bred_about .bred_about_wrap .bred_about_text {
+      color: #fff;
+      font: 400 1rem/22px 'Hind Siliguri', sans-serif;
+      max-width: 500px; }
+
+.text_block_2 .container {
+  padding: 20px 0; }
+
+.text_block_2 .block_wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 3fr 1fr; }
+  @media (max-width: 990px) {
+    .text_block_2 .block_wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 20px; } }
+  .text_block_2 .block_wrapper img {
+    display: block;
+    margin: 0 auto; }
+  .text_block_2 .block_wrapper .block_title {
+    margin-bottom: 5px;
+    color: #4a4b4b;
+    font: 600 1.4rem 'Hind Siliguri', sans-serif; }
+    @media (max-width: 990px) {
+      .text_block_2 .block_wrapper .block_title {
+        font: 600 1.25rem 'Hind Siliguri', sans-serif; } }
+  .text_block_2 .block_wrapper .block_text {
+    color: #4a4b4b;
+    font: 400 1rem/22px 'Hind Siliguri', sans-serif; }
+
+.text_block {
+  background: #404a3d; }
+  .text_block .container {
+    padding: 30px 0; }
+  .text_block .text_block_wrap h1,
+  .text_block .text_block_wrap h2,
+  .text_block .text_block_wrap h3,
+  .text_block .text_block_wrap h4,
+  .text_block .text_block_wrap h5,
+  .text_block .text_block_wrap h6 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font: 600 1.3rem 'Hind Siliguri', sans-serif; }
+  .text_block .text_block_wrap p {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #fff;
+    font: 400 1rem/24px 'Hind Siliguri', sans-serif; }
+    @media (max-width: 990px) {
+      .text_block .text_block_wrap p {
+        max-width: 100%; } }
+
+.activity_top .activity_top_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90%;
+  margin: 0 auto; }
+  @media (max-width: 990px) {
+    .activity_top .activity_top_wrap {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      grid-gap: 0; } }
+  .activity_top .activity_top_wrap img {
+    position: relative;
+    display: block;
+    max-height: 450px;
+    margin: 0 auto; }
+  .activity_top .activity_top_wrap .activity_title {
+    margin-bottom: 5px;
+    color: #4a4b4b;
+    font: 600 1.4rem 'Hind Siliguri', sans-serif; }
+    @media (max-width: 990px) {
+      .activity_top .activity_top_wrap .activity_title {
+        font: 600 1.25rem 'Hind Siliguri', sans-serif; } }
+  .activity_top .activity_top_wrap .activity_text {
+    color: #4a4b4b;
+    font: 400 1rem/22px 'Hind Siliguri', sans-serif; }
+
+.activity_bottom {
+  background: #eff2f5;
+  overflow: hidden; }
+  .activity_bottom .container {
+    padding: 50px 0 0 0; }
+    @media (max-width: 990px) {
+      .activity_bottom .container {
+        padding: 25px 0 0 0; } }
+  .activity_bottom .activity_bottom_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 90%;
+    margin: 0 auto; }
+    @media (max-width: 990px) {
+      .activity_bottom .activity_bottom_wrap {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        grid-gap: 0; } }
+    .activity_bottom .activity_bottom_wrap img {
+      position: relative;
+      display: block;
+      max-height: 600px;
+      margin: 0 auto;
+      bottom: -30px; }
+      @media (max-width: 990px) {
+        .activity_bottom .activity_bottom_wrap img {
+          max-height: 420px;
+          grid-row-start: 2;
+          bottom: -50px; } }
+    .activity_bottom .activity_bottom_wrap .activity_title {
+      margin-bottom: 5px;
+      color: #4a4b4b;
+      font: 600 1.4rem 'Hind Siliguri', sans-serif; }
+      @media (max-width: 990px) {
+        .activity_bottom .activity_bottom_wrap .activity_title {
+          font: 600 1.25rem 'Hind Siliguri', sans-serif; } }
+    .activity_bottom .activity_bottom_wrap .activity_text {
+      margin-bottom: 20px;
+      color: #4a4b4b;
+      font: 400 1rem/22px 'Hind Siliguri', sans-serif; }
+    .activity_bottom .activity_bottom_wrap .activity_btn {
+      font: 600 1rem 'Hind Siliguri', sans-serif;
+      border-radius: 35px;
+      color: #000;
+      display: inline-block;
+      border: 2px solid #f1cf69;
+      padding: 10px 40px;
+      background: #f1cf69;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+      @media (max-width: 576px) {
+        .activity_bottom .activity_bottom_wrap .activity_btn {
+          width: 100%;
+          display: block;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          text-align: center; } }
 
 .breadcrumbs {
   background: url(../img/home/bg_last.jpg) no-repeat center center/cover; }
@@ -1410,6 +1601,12 @@ button {
   margin-bottom: 85px; }
   @media (max-width: 990px) {
     .margin {
+      margin-bottom: 40px; } }
+
+.margin_xl {
+  margin-bottom: 155px; }
+  @media (max-width: 990px) {
+    .margin_xl {
       margin-bottom: 40px; } }
 
 main {
